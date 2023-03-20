@@ -1,0 +1,38 @@
+    /*
+     1)  Cucumber BDD ( behaviour driven development) ( Davranış tabanli geliştirme)
+    yaklaşımı için kullanılmakta olan açık kaynak kodlu bir kütüphanedir.
+
+
+     2)  Gherkin:Projede her bir davranış için .feature uzantılı bir Gherkin dosyası oluşturulur.
+     Bu feature dosyasına ilgili özelliğin farklı durumlardaki davranışları tanımlanır.
+     Given anahtar kelimesi ile ön koşul yani başlangıç durumu tanımlanır, When, And anahtar kelimeleri ile olayı
+     Then anahtar kelimesi ile de sonuç tanımlanır.
+     Given-When-And-Then adımları sadece okuyanlar icin farkeder Java icin hepsi birdir.
+
+      3)  Cucumber (TDD)(Test Driven Development) test odaklı geliştirmeye izin verir,
+      çünkü Cucumber ile Junit veya TestNG kullanabiliriz.
+
+      1) Projeyi Oluştur
+      2) Test Java altına pages, runners, stepdefinitions, utulities package lerini olustur
+      3)Driver'i utulities içine ekle
+      4)Config Reader class'ını oluştur
+      5) proje seviyesinde configuration.properties oluştur
+      6) test package seviyesinde resources dosyası(directory) oluştur
+      resources bayraklı değilse çalışmaz sağ click mark as test resources root seçilmeli
+      7)Resources içine features directory yada package olustur
+      8) ilk .feature oluştur
+      9) cucumber plugin’i intelliJ’e ekleyelim (settings/Plugins)
+       9.1.(Mac)IntelliJ Idea->Preference->Plugins->Marketplace->Type Cucumber for Java->Install->Restart
+        9.2.(Windows)File->Se@ng->->Plugins->Marketplace->Type Cucumber for Java->Install->Restart
+
+
+
+      -- ***** Kullandığımız Dependency ler
+      <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+      --  <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+       <!-- alta ki io.cucumber olanların versiyonları aynı olmak zorunda-->
+       <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+       <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+       <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+       <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+
