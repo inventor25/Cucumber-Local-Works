@@ -6,7 +6,7 @@ Feature:
   # Kullanıcı google da automation tester aratır sonuclarda tester yazdığını doğrular
 
   Scenario: TC01_google_automation_tester_arama
-    Given  Kullanici google a gider
+    Given  Kullanici google gider
     When   search bolumune automation tester yazar aratir
     Then   sonuclarda tester oldugunu dogrular
     Then close the application

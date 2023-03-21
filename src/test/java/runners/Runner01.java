@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",//features folder path
         glue = {"stepdefinitions"}//stepdefinitions path
+        //tags = "@excel_automation"
 )
 public class Runner01 {
 

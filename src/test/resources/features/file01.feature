@@ -6,10 +6,19 @@ Feature:
   # Kullanıcı google da automation tester aratır sonuclarda tester yazdığını doğrular
 
   Scenario: TC01_google_automation_tester_arama
-    Given  Kullanici google a gider
+    Given  Kullanici google gider
     When   search bolumune automation tester yazar aratir
     Then   sonuclarda tester oldugunu dogrular
     Then close the application
+
+  # Yeni bir Scenario oluşturulduğunda Cucumber daha önce ki stepleri okur
+  #ve yeni oluşturulan seneryo stepleriyle karşılaştırır yeni imzası aynı olan
+  #stepler için ayrı java kodları üretmez kullanılmayanlar için üretir
+
+  #Soru-2) Kullanıcı Google da peugeot araması yapar ve sonuçlarda
+  #  peugeot olduğunu doğrular
+
+  #---- tag runner'a tag koyup sadece peugeot seneryosunu çalıştır
 
 
 
