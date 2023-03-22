@@ -7,7 +7,7 @@ Feature:
 
   Scenario: TC01_google_automation_tester_arama
     Given  Kullanici google gider
-    When   search bolumune automation tester yazar aratir
+    When   search bolumunde automation tester aratir
     Then   sonuclarda tester oldugunu dogrular
     Then close the application
 

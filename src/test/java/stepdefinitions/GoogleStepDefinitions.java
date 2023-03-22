@@ -17,7 +17,7 @@ public class GoogleStepDefinitions {
         Driver.getDriver().get(ConfigReader.getProperty("google_url"));
 
     }
-    @When("search bolumune automation tester yazar aratir")
+    @When("search bolumunde automation tester aratir")
     public void search_bolumune_automation_tester_yazar_aratir() {
         googlePage.searchBox.sendKeys("automation tester", Keys.ENTER);
 

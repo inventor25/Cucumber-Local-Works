@@ -10,8 +10,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         features = "./src/test/resources/features",//features folder path
-        glue = {"stepdefinitions"}//stepdefinitions path
-        //tags = "@excel_automation"
+        glue = {"stepdefinitions"},//stepdefinitions path
+       tags = "@parametre",
+        dryRun = true
 )
 public class Runner01 {
 
